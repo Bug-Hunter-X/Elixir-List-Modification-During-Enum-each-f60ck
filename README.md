@@ -1,0 +1,1 @@
+This repository demonstrates a common pitfall in Elixir: attempting to modify a list in place while iterating using `Enum.each`. Elixir uses immutable data structures, so modifying a list within an `Enum.each` loop will not change the original list; instead, it produces a new list.  The provided solution illustrates the correct approach using Enum.filter or recursion.
